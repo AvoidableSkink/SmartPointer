@@ -137,7 +137,7 @@ namespace usu {
 
 		T& operator[](unsigned int index) {
 			if (index < 0 || index >= arraySize) { 
-				throw new std::exception("Index out of bounds");
+				throw std::exception();
 			}
 			return data[index];
 		}
